@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script - INTRO </title>
+</head>
+<body>
+    <h1>teste</h1>
+    <script>
+//------------------------------------------------------------------------------------------- 
+
+        //variaveis
+        var nome = "Henrique";
+        var idade = 19;
+        var peso = 55.9;
+        var humano = true;
+
+        var alunos = ["Matheus", "Elison", "Luis"];
+
+        var aluno = {
+            nome : "Claudio",
+            idade : 19,
+            peso : 55.9,
+            humano : true
+        }
+        //console.log(idade);
+
+//-------------------------------------------------------------------------------------------
+
+        //operações matematicas
+        var x = 10;
+        var y = 5;
+
+        var resultadoVar = x + y;
+        var resultado = x+3;
+
+        //console.log(resultado);
+
+//-------------------------------------------------------------------------------------------
+
+        //função
+        function soma(/*parametro*/numero1, numero2){
+            var resultadofuncao = numero1 + numero2;
+            
+            return resultadofuncao; //o que a funcao vai retornar
+        }
+        var resultadofuncao = soma(1, 10); //redeclarar variavel fora da funcao por causa do ESCOPO
+        //console.log(resultadofuncao);
+
+//-------------------------------------------------------------------------------------------
+
+        //condicional IF, ELSE e Switch
+        // IF
+        /*
+        function retornasexo (sexo) {
+            if (sexo === "M"){
+                return "Masculino";
+            } else if ( sexo === "F"){
+                return "Feminino";
+            }else{
+                return "Outro";
+            }
+        }
+        var qualsexo = retornasexo('asudijaas');
+        console.log(qualsexo);
+        */
+
+        //Switch
+        /*
+        function retornasexo (sexo) {
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outro';
+            }
+        }
+        var qualsexo = retornasexo('M');
+        console.log(qualsexo);
+        */
+
+//-------------------------------------------------------------------------------------------
+
+       // AND &&, OR || ,  NOT !=
+       /*
+       var sexo = 'M', idade = 25;
+
+       if (sexo === 'M' && idade >= 18){
+           console.log('OK');
+       }else{
+           console.log('NAO');
+       }
+       */
+
+//-------------------------------------------------------------------------------------------
+
+        //CONDICAO TERNARIA, reduzir if else
+        /*
+        var sexo = 'F';
+        var retorno = (sexo=== 'M') ? 'Masculino' : 'Feminino';
+        console.log(retorno);
+        */
+
+//------------------------------------------------------------------------------------------- 
+       //FOR, WHILE
+       /*
+       for ( var i = 0; i <= 10; i ++){ //sempre que souber o tamanho do intervalo
+           //console.log(i); 
+       }
+       
+       var j = 2;
+       while (j < 600){
+           console.log(j);  
+
+           j *= 2;   
+       }
+       */
+
+//-------------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>
