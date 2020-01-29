@@ -4,6 +4,14 @@ var buttonElement = document.querySelector('#app button');
 
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
+/*
+    var todos = [
+        "Estudar HTML",
+        "Estudar CSS",
+        "Estudar JS"
+    ]
+*/
+
 function renderTodos(){
     listElement.innerHTML = '';
 
